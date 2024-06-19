@@ -1,0 +1,78 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif; /* Updated font family */
+  background-color: #111; /* Dark background color */
+  display: flex;
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  min-height: 100vh; /* Full viewport height */
+  color: #fff; /* Text color */
+}
+
+.container {
+  width: 100%;
+  max-width: 350px; /* Adjusted maximum width for desktop */
+  background-color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif; /* Use Roboto for headings */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Added margin between form groups */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333; /* Input background color */
+  border: none;
+  border-radius: 4px;
+  color: #fff; /* Input text color */
+  font-family: "Roboto", sans-serif; /* Use Roboto for inputs */
+}
+
+.btn-submit {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Added margin for spacing */
+  font-family: "Roboto", sans-serif; /* Use Roboto for button */
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+}
